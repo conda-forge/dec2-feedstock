@@ -1,19 +1,19 @@
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
-  name: dec2
+  name: dask-ec2
   version: "{{ version }}"
 
 source:
-  fn: dec2-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/d/dec2/dec2-{{ version }}.tar.gz
-  md5: 6ce7d6eb13105f7f7697f2ce80250018
+  fn: dask-ec2-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/d/dask-ec2/dask-ec2-{{ version }}.tar.gz
+  md5: 1025ffbe377540a125c5abba3b4f4ba0
 
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
-    - dec2=dec2.cli.main:start
+    - dask-ec2=dask_ec2.cli.main:start
 
 requirements:
   build:
@@ -30,15 +30,15 @@ requirements:
 
 test:
   imports:
-    - dec2
-    - dec2.cli
-    - dec2.tests
-    - dec2.tests.salt
+    - dask_ec2
+    - dask_ec2.cli
+    - dask_ec2.tests
+    - dask_ec2.tests.salt
   commands:
-    - dec2 --help
+    - dask-ec2 --help
 
 about:
-  home: https://github.com/dask/dec2
+  home: https://github.com/dask/dask-ec2
   license: Apache 2.0
   summary: 'Start a cluster in EC2 for dask.distributed'
 
