@@ -11,6 +11,18 @@ Summary: Start a cluster in EC2 for dask.distributed
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/dec2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/dec2-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/dec2-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/dec2-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/dec2-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/dec2-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dask-ec2/badges/version.svg)](https://anaconda.org/conda-forge/dask-ec2)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dask-ec2/badges/downloads.svg)](https://anaconda.org/conda-forge/dask-ec2)
+
 Installing dask-ec2
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `dask-ec2` available on your platf
 ```
 conda search dask-ec2 --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/dec2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/dec2-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/dec2-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/dec2-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/dec2-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/dec2-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dask-ec2/badges/version.svg)](https://anaconda.org/conda-forge/dask-ec2)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dask-ec2/badges/downloads.svg)](https://anaconda.org/conda-forge/dask-ec2)
 
 
 Updating dask-ec2-feedstock
