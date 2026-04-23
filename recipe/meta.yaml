@@ -6,23 +6,23 @@ package:
 
 source:
   fn: dask-ec2-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/d/dask-ec2/dask-ec2-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/dask-ec2/dask-ec2-{{ version }}.tar.gz
   md5: 3ed0579456d9f24ef30ea0f9baf995f0
 
 build:
   noarch: python
-  number: 1000
+  number: 1001
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
     - dask-ec2=dask_ec2.cli.main:start
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python
+    - python >={{ python_min }}
     - six
     - click
     - paramiko
@@ -30,6 +30,8 @@ requirements:
     - pyyaml
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dask_ec2
     - dask_ec2.cli
